@@ -1,0 +1,13 @@
+@model Ders
+@{
+    ViewData["Title"] = "AddDers";
+}
+
+<h1>Ders Ekleme Ýþlemi</h1>
+
+
+<form asp-action="AddDers" asp-controller="Ders" method="post">
+    <label asp-for="Ders Adý"></label>
+    <input asp-for="DersAdý" />
+    <input type="submit" class="btn btn-success" value="Kaydet" />
+</form>
